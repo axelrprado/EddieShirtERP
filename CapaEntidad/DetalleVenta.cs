@@ -9,12 +9,13 @@ namespace CapaEntidad
     public class DetalleVenta
     {
         public int IdDetalleVenta { get; set; }
-        //LLave foranea de la tabla venta
         public Venta OIdVenta { get; set; }
         public Prenda OIdPrenda { get; set; }
-        public decimal PrecioVenta { get; set; }
+        public string Descripcion { get; set; }
+        public decimal Tinta { get; set; }
         public int Cantidad { get; set; }
-        public decimal SubTotal { get; set; }
-        public DateTime FechaRegistro { get; set; }
+        public decimal Comision_ML_25 { get; set; }
+        public decimal Comision_ML_15 { get; set; }
+        public decimal Comision_TER { get; set; }
     }
 }

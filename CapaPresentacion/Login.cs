@@ -27,13 +27,12 @@ namespace CapaPresentacion
 
         private void btningresar_Click(object sender, EventArgs e)
         {
-            // Verificar el login
-            Usuario ousuario = new CN_Usuario().Listar().Where(u => u.IdUsuario == Convert.ToInt32(txtusuario.Text) &&
+            Usuario ousuario = new CN_Usuario().Listar().Where(u => u.NombreUsuario == txtusuario.Text &&
             u.Clave == txtclave.Text).FirstOrDefault();
 
             if (ousuario != null)
             {
-                Inicio form = new Inicio();
+                Inicio form = new Inicio(ousuario);
                 form.Show();
                 this.Hide();
                 //Muestra el formulario de logeo que ocultamos anteriormente

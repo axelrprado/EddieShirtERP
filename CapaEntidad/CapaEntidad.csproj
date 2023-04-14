@@ -42,11 +42,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cliente.cs" />
+    <Compile Include="ColorPrenda.cs" />
     <Compile Include="Compra.cs" />
     <Compile Include="DetalleCompra.cs" />
     <Compile Include="DetalleVenta.cs" />
     <Compile Include="Prenda.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TallaPrenda.cs" />
+    <Compile Include="TipoPrenda.cs" />
     <Compile Include="Usuario.cs" />
     <Compile Include="Venta.cs" />
   </ItemGroup>
