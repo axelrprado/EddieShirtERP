@@ -17,7 +17,7 @@ namespace CapaPresentacion
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // En que formulario se va a iniciar el programa
-            Application.Run(new Login());
+            Application.Run(new Inicio());
         }
     }
 }
