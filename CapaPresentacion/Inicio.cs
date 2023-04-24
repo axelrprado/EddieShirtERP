@@ -33,7 +33,7 @@ namespace CapaPresentacion
 
         private void Inicio_Load(object sender, EventArgs e)
         {
-            lblUsuario.Text = usuarioActual.NombreCompleto;
+            //lblUsuario.Text = usuarioActual.NombreCompleto;
         }
 
         private void AbrirFormulario(IconMenuItem menu, Form formulario)

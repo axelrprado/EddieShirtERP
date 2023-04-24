@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,13 +50,6 @@
             this.BtnEliminar = new FontAwesome.Sharp.IconButton();
             this.label9 = new System.Windows.Forms.Label();
             this.Dgvdata = new System.Windows.Forms.DataGridView();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.CboBusqueda = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.BtnBuscarUsu = new FontAwesome.Sharp.IconButton();
             this.BtnSeleccionar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.IdUsuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,6 +57,13 @@
             this.AMaterno = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Correo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Clave = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.CboBusqueda = new System.Windows.Forms.ComboBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.BtnBuscarUsu = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.Dgvdata)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,6 +76,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(280, 570);
             this.label1.TabIndex = 0;
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -86,6 +87,7 @@
             this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Id Usuario:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -96,6 +98,7 @@
             this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Nombre:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -106,6 +109,7 @@
             this.label4.Size = new System.Drawing.Size(87, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Apellido Paterno:";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -116,6 +120,7 @@
             this.label5.Size = new System.Drawing.Size(89, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Apellido Materno:";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -126,6 +131,7 @@
             this.label6.Size = new System.Drawing.Size(41, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "Correo:";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
@@ -136,6 +142,7 @@
             this.label7.Size = new System.Drawing.Size(64, 13);
             this.label7.TabIndex = 6;
             this.label7.Text = "Contraseña:";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtIdUsuario
             // 
@@ -143,6 +150,7 @@
             this.txtIdUsuario.Name = "txtIdUsuario";
             this.txtIdUsuario.Size = new System.Drawing.Size(205, 20);
             this.txtIdUsuario.TabIndex = 7;
+            this.txtIdUsuario.TextChanged += new System.EventHandler(this.txtIdUsuario_TextChanged);
             // 
             // txtNombre
             // 
@@ -150,6 +158,7 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(205, 20);
             this.txtNombre.TabIndex = 8;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtAPaterno
             // 
@@ -157,6 +166,7 @@
             this.txtAPaterno.Name = "txtAPaterno";
             this.txtAPaterno.Size = new System.Drawing.Size(205, 20);
             this.txtAPaterno.TabIndex = 9;
+            this.txtAPaterno.TextChanged += new System.EventHandler(this.txtAPaterno_TextChanged);
             // 
             // txtAMaterno
             // 
@@ -164,6 +174,7 @@
             this.txtAMaterno.Name = "txtAMaterno";
             this.txtAMaterno.Size = new System.Drawing.Size(205, 20);
             this.txtAMaterno.TabIndex = 10;
+            this.txtAMaterno.TextChanged += new System.EventHandler(this.txtAMaterno_TextChanged);
             // 
             // txtCorreo
             // 
@@ -171,6 +182,7 @@
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(205, 20);
             this.txtCorreo.TabIndex = 11;
+            this.txtCorreo.TextChanged += new System.EventHandler(this.txtCorreo_TextChanged);
             // 
             // txtClave
             // 
@@ -179,6 +191,7 @@
             this.txtClave.PasswordChar = '*';
             this.txtClave.Size = new System.Drawing.Size(205, 20);
             this.txtClave.TabIndex = 12;
+            this.txtClave.TextChanged += new System.EventHandler(this.txtClave_TextChanged);
             // 
             // txtConClave
             // 
@@ -187,6 +200,7 @@
             this.txtConClave.PasswordChar = '*';
             this.txtConClave.Size = new System.Drawing.Size(205, 20);
             this.txtConClave.TabIndex = 14;
+            this.txtConClave.TextChanged += new System.EventHandler(this.txtConClave_TextChanged);
             // 
             // label8
             // 
@@ -197,6 +211,7 @@
             this.label8.Size = new System.Drawing.Size(110, 13);
             this.label8.TabIndex = 13;
             this.label8.Text = "Confirmar contraseña:";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // BtnGuardar
             // 
@@ -236,6 +251,7 @@
             this.BtnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnEditar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEditar.UseVisualStyleBackColor = false;
+            this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
             // 
             // BtnEliminar
             // 
@@ -256,6 +272,7 @@
             this.BtnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnEliminar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnEliminar.UseVisualStyleBackColor = false;
+            this.BtnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // label9
             // 
@@ -267,19 +284,20 @@
             this.label9.Size = new System.Drawing.Size(133, 22);
             this.label9.TabIndex = 18;
             this.label9.Text = "Detalle Usuario";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // Dgvdata
             // 
             this.Dgvdata.AllowUserToAddRows = false;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.Padding = new System.Windows.Forms.Padding(2);
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.Padding = new System.Windows.Forms.Padding(2);
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Dgvdata.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.Dgvdata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgvdata.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.BtnSeleccionar,
@@ -293,91 +311,13 @@
             this.Dgvdata.MultiSelect = false;
             this.Dgvdata.Name = "Dgvdata";
             this.Dgvdata.ReadOnly = true;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            this.Dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.Dgvdata.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.Dgvdata.RowTemplate.Height = 28;
             this.Dgvdata.Size = new System.Drawing.Size(605, 325);
             this.Dgvdata.TabIndex = 19;
             this.Dgvdata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // label10
-            // 
-            this.label10.BackColor = System.Drawing.Color.White;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(291, 38);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(617, 60);
-            this.label10.TabIndex = 20;
-            this.label10.Text = "Lista de Usuarios:";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtId
-            // 
-            this.txtId.Location = new System.Drawing.Point(208, 49);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(22, 20);
-            this.txtId.TabIndex = 21;
-            this.txtId.Text = "0";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(514, 63);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(62, 13);
-            this.label11.TabIndex = 22;
-            this.label11.Text = "Buscar Por:";
-            // 
-            // CboBusqueda
-            // 
-            this.CboBusqueda.FormattingEnabled = true;
-            this.CboBusqueda.Location = new System.Drawing.Point(582, 63);
-            this.CboBusqueda.Name = "CboBusqueda";
-            this.CboBusqueda.Size = new System.Drawing.Size(95, 21);
-            this.CboBusqueda.TabIndex = 23;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(693, 63);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(95, 20);
-            this.textBox1.TabIndex = 24;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.White;
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.Black;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Broom;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 18;
-            this.iconButton1.Location = new System.Drawing.Point(852, 61);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(33, 23);
-            this.iconButton1.TabIndex = 26;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            // 
-            // BtnBuscarUsu
-            // 
-            this.BtnBuscarUsu.BackColor = System.Drawing.Color.White;
-            this.BtnBuscarUsu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.BtnBuscarUsu.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.BtnBuscarUsu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnBuscarUsu.ForeColor = System.Drawing.Color.White;
-            this.BtnBuscarUsu.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.BtnBuscarUsu.IconColor = System.Drawing.Color.Black;
-            this.BtnBuscarUsu.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnBuscarUsu.IconSize = 18;
-            this.BtnBuscarUsu.Location = new System.Drawing.Point(803, 61);
-            this.BtnBuscarUsu.Name = "BtnBuscarUsu";
-            this.BtnBuscarUsu.Size = new System.Drawing.Size(33, 23);
-            this.BtnBuscarUsu.TabIndex = 25;
-            this.BtnBuscarUsu.UseVisualStyleBackColor = false;
             // 
             // BtnSeleccionar
             // 
@@ -424,6 +364,91 @@
             this.Clave.Name = "Clave";
             this.Clave.ReadOnly = true;
             this.Clave.Visible = false;
+            // 
+            // label10
+            // 
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(291, 38);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(617, 60);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Lista de Usuarios:";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // txtId
+            // 
+            this.txtId.Location = new System.Drawing.Point(208, 49);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(22, 20);
+            this.txtId.TabIndex = 21;
+            this.txtId.Text = "0";
+            this.txtId.TextChanged += new System.EventHandler(this.txtId_TextChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(514, 63);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(62, 13);
+            this.label11.TabIndex = 22;
+            this.label11.Text = "Buscar Por:";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // CboBusqueda
+            // 
+            this.CboBusqueda.FormattingEnabled = true;
+            this.CboBusqueda.Location = new System.Drawing.Point(582, 63);
+            this.CboBusqueda.Name = "CboBusqueda";
+            this.CboBusqueda.Size = new System.Drawing.Size(95, 21);
+            this.CboBusqueda.TabIndex = 23;
+            this.CboBusqueda.SelectedIndexChanged += new System.EventHandler(this.CboBusqueda_SelectedIndexChanged);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(693, 63);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(95, 20);
+            this.textBox1.TabIndex = 24;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.White;
+            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.Color.Black;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Broom;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 18;
+            this.iconButton1.Location = new System.Drawing.Point(852, 61);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(33, 23);
+            this.iconButton1.TabIndex = 26;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // BtnBuscarUsu
+            // 
+            this.BtnBuscarUsu.BackColor = System.Drawing.Color.White;
+            this.BtnBuscarUsu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.BtnBuscarUsu.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.BtnBuscarUsu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBuscarUsu.ForeColor = System.Drawing.Color.White;
+            this.BtnBuscarUsu.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.BtnBuscarUsu.IconColor = System.Drawing.Color.Black;
+            this.BtnBuscarUsu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnBuscarUsu.IconSize = 18;
+            this.BtnBuscarUsu.Location = new System.Drawing.Point(803, 61);
+            this.BtnBuscarUsu.Name = "BtnBuscarUsu";
+            this.BtnBuscarUsu.Size = new System.Drawing.Size(33, 23);
+            this.BtnBuscarUsu.TabIndex = 25;
+            this.BtnBuscarUsu.UseVisualStyleBackColor = false;
+            this.BtnBuscarUsu.Click += new System.EventHandler(this.BtnBuscarUsu_Click);
             // 
             // frmUsuarios
             // 
